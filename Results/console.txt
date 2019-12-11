@@ -9,7 +9,7 @@ os.arch              : amd64
 os.version           : 4.15.0-50-generic
 file.encoding        : UTF-8
 ========================
-Run Started on Wed Dec 11 07:41:52 UTC 2019
+Run Started on Wed Dec 11 07:42:25 UTC 2019
 Loading Browser Profile
 SLF4J: Class path contains multiple SLF4J bindings.
 SLF4J: Found binding in [jar:file:/drone/src/lib/slf4j-nop-1.7.28.jar!/org/slf4j/impl/StaticLoggerBinder.class]
@@ -30,14 +30,14 @@ Inside Task Run
 Running Iteration 1
 Launching Chrome
 Launching Remote Driver
-2019-12-11 07:41:52:12S +0000 [INFO] org.openqa.selenium.remote.DesiredCapabilities chrome:Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-2019-12-11 07:41:52:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.core.Task onError:Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+2019-12-11 07:42:25:12S +0000 [INFO] org.openqa.selenium.remote.DesiredCapabilities chrome:Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+2019-12-11 07:42:26:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.core.Task onError:Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '975216b9b232', ip: '192.168.64.2', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-50-generic', java.version: '11.0.2'
+System info: host: '0ba36fcf4d3f', ip: '192.168.80.2', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-50-generic', java.version: '11.0.2'
 Driver info: driver.version: SeleniumDriver
 org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '975216b9b232', ip: '192.168.64.2', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-50-generic', java.version: '11.0.2'
+System info: host: '0ba36fcf4d3f', ip: '192.168.80.2', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-50-generic', java.version: '11.0.2'
 Driver info: driver.version: SeleniumDriver
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:573)
 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
@@ -54,7 +54,7 @@ Driver info: driver.version: SeleniumDriver
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.net.ConnectException: Failed to connect to hub/192.168.64.4:4444
+Caused by: java.net.ConnectException: Failed to connect to hub/192.168.80.3:4444
 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
 	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
@@ -92,12 +92,12 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 
 [DEBUG]   | Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '975216b9b232', ip: '192.168.64.2', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-50-generic', java.version: '11.0.2'
+System info: host: '0ba36fcf4d3f', ip: '192.168.80.2', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-50-generic', java.version: '11.0.2'
 Driver info: driver.version: SeleniumDriver
 
 ===================================================================================================
 
-2019-12-11 07:41:52:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler updateTestLog:null
+2019-12-11 07:42:26:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler updateTestLog:null
 java.lang.NullPointerException
 	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:103)
 	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
@@ -119,12 +119,12 @@ Failed Steps         : 0
 Time Taken           : 00:00:00
 -----------------------------------------------------
 
-Run Finished on Wed Dec 11 07:41:52 UTC 2019
+Run Finished on Wed Dec 11 07:42:26 UTC 2019
 -----------------------------------------------------
-ExecutionDate        : 11-Dec-2019 07-41-52
+ExecutionDate        : 11-Dec-2019 07-42-25
 Executed TestCases   : 1
 Passed TestCases     : 0
 Failed TestCases     : 1
 Time Taken           : 00:00:00
-ReportPath           : file:///Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/11-Dec-2019 07-41-52/summary.html
+ReportPath           : file:///Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/11-Dec-2019 07-42-25/summary.html
 -----------------------------------------------------
