@@ -9,7 +9,7 @@ os.arch              : amd64
 os.version           : 4.15.0-20-generic
 file.encoding        : UTF-8
 ========================
-Run Started on Wed Dec 11 07:42:55 UTC 2019
+Run Started on Wed Dec 11 07:43:22 UTC 2019
 Loading Browser Profile
 SLF4J: Class path contains multiple SLF4J bindings.
 SLF4J: Found binding in [jar:file:/drone/src/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
@@ -31,11 +31,11 @@ Inside Task Run
 Running Iteration 1
 Launching Chrome
 Launching Remote Driver
-2019-12-11 07:42:55:12S +0000 [INFO] org.openqa.selenium.remote.DesiredCapabilities chrome:Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-2019-12-11 07:42:55:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.core.Task onError:Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized], extensions: []}, version: }
-Command duration or timeout: 214 milliseconds
+2019-12-11 07:43:22:12S +0000 [INFO] org.openqa.selenium.remote.DesiredCapabilities chrome:Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+2019-12-11 07:43:23:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.core.Task onError:Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized], extensions: []}, version: }
+Command duration or timeout: 226 milliseconds
 org.openqa.selenium.WebDriverException: Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized], extensions: []}, version: }
-Command duration or timeout: 214 milliseconds
+Command duration or timeout: 226 milliseconds
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -74,7 +74,7 @@ Command duration or timeout: 214 milliseconds
 	at java.base/java.lang.Thread.run(Thread.java:834)
 Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized], extensions: []}, version: }
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: '0b24a8ca1d53', ip: '172.19.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '11.0.2'
+System info: host: '2323050af9c8', ip: '172.23.0.4', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '11.0.2'
 Driver info: driver.version: unknown
 	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
 	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
@@ -108,11 +108,11 @@ Driver info: driver.version: unknown
 	at java.lang.Thread.run(Thread.java:748)
 
 [DEBUG]   | Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized], extensions: []}, version: }
-Command duration or timeout: 214 milliseconds
+Command duration or timeout: 226 milliseconds
 
 ===================================================================================================
 
-2019-12-11 07:42:55:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler updateTestLog:null
+2019-12-11 07:43:23:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler updateTestLog:null
 java.lang.NullPointerException
 	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:103)
 	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
@@ -134,12 +134,12 @@ Failed Steps         : 0
 Time Taken           : 00:00:00
 -----------------------------------------------------
 
-Run Finished on Wed Dec 11 07:42:55 UTC 2019
+Run Finished on Wed Dec 11 07:43:23 UTC 2019
 -----------------------------------------------------
-ExecutionDate        : 11-Dec-2019 07-42-55
+ExecutionDate        : 11-Dec-2019 07-43-22
 Executed TestCases   : 1
 Passed TestCases     : 0
 Failed TestCases     : 1
 Time Taken           : 00:00:00
-ReportPath           : file:///Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/11-Dec-2019 07-42-55/summary.html
+ReportPath           : file:///Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/11-Dec-2019 07-43-22/summary.html
 -----------------------------------------------------
