@@ -34,7 +34,7 @@ steps:
        - git add *
        - git commit -m "Test Results"
        - git pull origin master
-       - git push origin
+       - git push --set-upstream origin master
        
 when:
     event:
