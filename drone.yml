@@ -20,6 +20,7 @@ steps:
   -  name: test
      image: alpine/git
      image: openjdk:11.0.2
+     secrets: [ 2201b2a6d0032a9b4881a7f0f6e1e1c8097cd824 ]
      pull: true
      
      commands:
