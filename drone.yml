@@ -39,7 +39,7 @@ steps:
        - git commit -m "Test Results"
        - git remote set-url --add origin https://github.com/sara-suku/drone1.5
        - git pull origin master
-       - git push https://sara-suku:(Jesus853)@github.com/sara-suku/drone1.5
+       - git push https://sara-suku:Jesus-853@github.com/sara-suku/drone1.5
        
 when:
     event:
