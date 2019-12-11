@@ -31,6 +31,8 @@ steps:
        - mkdir -p Results
        - cp ./Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/Latest/* Results
        - cd ./Results
+       - git config --global user.email "sara.suku@gmail.com"
+       - git config --global user.name "sara-suku"
        - git add *
        - git commit -m "Test Results"
        - git pull origin master
