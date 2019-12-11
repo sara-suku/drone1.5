@@ -28,6 +28,14 @@ steps:
        - chmod 777 ./lib/Drivers/chromedriver
        - chmod 777 ./Run.command
        - ./Run.command -run -project_location "Projects/DemoProject" -release "cits" -testset "BasicWebFlow_Environment1"
+       - mkdir -p Results
+       - cp ./Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/Latest/* Results
+       - cd ./Results
+       - git add *
+       - git commit -m "Test Results"
+       - git pull origin
+       - git push origin
+       
 when:
     event:
       - push
