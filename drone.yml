@@ -20,7 +20,6 @@ steps:
   -  name: test
      image: alpine/git
      image: openjdk:11.0.2
-     secrets: 2201b2a6d0032a9b4881a7f0f6e1e1c8097cd824
      pull: true
      
      commands:
@@ -28,13 +27,10 @@ steps:
        - java -version
        - chmod 777 ./lib/Drivers/chromedriver
        - chmod 777 ./Run.command
-       - ./Run.command -run -project_location "Projects/DemoProject" -release "cits" -testset "BasicWebFlow_Environment1"
+       - ./Run.command -run -project_location "Projects/DemoProject" -release "cits" -testset "BasicWebFlow_Environment1" -standalone_report
        - mkdir -p Results
        - cp ./Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/Latest/* Results
        - cd ./Results
-       - git config --global user.email "sara.suku@gmail.com"
-       - git config --global user.name "sara-suku"
-       - git clone https://github.com/sara-suku/drone1.5.git
        - git add *
        - git commit -m "Test Results"
        - git remote set-url --add origin https://github.com/sara-suku/drone1.5
