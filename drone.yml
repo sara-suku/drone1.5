@@ -37,7 +37,6 @@ steps:
        - git pull origin master
        - git push https://sara-suku:Jesus-853@github.com/sara-suku/drone1.5
        
-       
 when:
     event:
       - push
