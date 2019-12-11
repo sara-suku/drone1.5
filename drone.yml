@@ -33,7 +33,7 @@ steps:
        - cd ./Results
        - git add *
        - git commit -m "Test Results"
-       - git pull origin
+       - git pull origin master
        - git push origin
        
 when:
