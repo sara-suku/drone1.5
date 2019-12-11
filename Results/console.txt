@@ -9,7 +9,7 @@ os.arch              : amd64
 os.version           : 4.15.0-20-generic
 file.encoding        : UTF-8
 ========================
-Run Started on Wed Dec 11 09:17:16 UTC 2019
+Run Started on Wed Dec 11 09:19:04 UTC 2019
 Loading Browser Profile
 SLF4J: Class path contains multiple SLF4J bindings.
 SLF4J: Found binding in [jar:file:/drone/src/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
@@ -31,33 +31,33 @@ Inside Task Run
 Running Iteration 1
 Launching Chrome
 Launching Remote Driver
-2019-12-11 09:17:16:12S +0000 [INFO] org.openqa.selenium.remote.DesiredCapabilities chrome:Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-2019-12-11 09:17:17:12S +0000 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
+2019-12-11 09:19:04:12S +0000 [INFO] org.openqa.selenium.remote.DesiredCapabilities chrome:Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+2019-12-11 09:19:05:12S +0000 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
 Chrome Launched
-Step:1   | Object: Browser | Action: Open | Input: URL_Global:URL | Conditon:  | @11-Dec-2019 09:17:17.017
+Step:1   | Object: Browser | Action: Open | Input: URL_Global:URL | Conditon:  | @11-Dec-2019 09:19:05.005
 [DONE]   | Opened Url: http://toolsqa.com/automation-practice-form/
 
 ===================================================================================================
 
-Step:2   | Object: firstname | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:17:19.019
-Using @name [firstname], Object 'firstname' Found in 31 ms
+Step:2   | Object: firstname | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:19:07.007
+Using @name [firstname], Object 'firstname' Found in 33 ms
 [DONE]   | Clicking on firstname
 
 ===================================================================================================
 
-Step:3   | Object: firstname | Action: Set | Input: @Cognizant | Conditon:  | @11-Dec-2019 09:17:20.020
-Using @name [firstname], Object 'firstname' Found in 21 ms
+Step:3   | Object: firstname | Action: Set | Input: @Cognizant | Conditon:  | @11-Dec-2019 09:19:08.008
+Using @name [firstname], Object 'firstname' Found in 18 ms
 [DONE]   | Entered Text 'Cognizant' on 'firstname'
 
 ===================================================================================================
 
-Step:4   | Object: lastname | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:17:20.020
-Using @type [input], Object 'lastname' Found in 117 ms
+Step:4   | Object: lastname | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:19:09.009
+Using @type [input], Object 'lastname' Found in 118 ms
 [FAIL]   | Seems Like the Element [lastname] is Not Visible or hidden at the moment
 
 ===================================================================================================
 
-2019-12-11 09:17:26:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [lastname] is Not Visible or hidden at the moment
+2019-12-11 09:19:14:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [lastname] is Not Visible or hidden at the moment
 com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [lastname] is Not Visible or hidden at the moment
 	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
 	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
@@ -74,13 +74,13 @@ com.cognizant.cognizantits.engine.execution.exception.element.ElementException: 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-Step:5   | Object: lastname | Action: Set | Input: @Intelligent Test Scripter | Conditon:  | @11-Dec-2019 09:17:26.026
-Using @type [input], Object 'lastname' Found in 132 ms
+Step:5   | Object: lastname | Action: Set | Input: @Intelligent Test Scripter | Conditon:  | @11-Dec-2019 09:19:14.014
+Using @type [input], Object 'lastname' Found in 146 ms
 [FAIL]   | Seems Like the Element [lastname] is Not Visible or hidden at the moment
 
 ===================================================================================================
 
-2019-12-11 09:17:32:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [lastname] is Not Visible or hidden at the moment
+2019-12-11 09:19:20:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [lastname] is Not Visible or hidden at the moment
 com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [lastname] is Not Visible or hidden at the moment
 	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
 	at com.cognizant.cognizantits.engine.commands.Basic.Set(Basic.java:99)
@@ -97,13 +97,13 @@ com.cognizant.cognizantits.engine.execution.exception.element.ElementException: 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-Step:6   | Object: Sex | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:17:32.032
-Using @name [sex], Object 'Sex' Found in 24 ms
+Step:6   | Object: Sex | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:19:20.020
+Using @name [sex], Object 'Sex' Found in 19 ms
 [FAIL]   | Seems Like the Element [Sex] is Not Visible or hidden at the moment
 
 ===================================================================================================
 
-2019-12-11 09:17:40:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Sex] is Not Visible or hidden at the moment
+2019-12-11 09:19:27:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Sex] is Not Visible or hidden at the moment
 com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Sex] is Not Visible or hidden at the moment
 	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
 	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
@@ -120,13 +120,13 @@ com.cognizant.cognizantits.engine.execution.exception.element.ElementException: 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-Step:7   | Object: Years of Experience | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:17:40.040
-Using @name [exp], Object 'Years of Experience' Found in 19 ms
+Step:7   | Object: Years of Experience | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:19:27.027
+Using @name [exp], Object 'Years of Experience' Found in 18 ms
 [FAIL]   | Seems Like the Element [Years of Experience] is Not Visible or hidden at the moment
 
 ===================================================================================================
 
-2019-12-11 09:17:46:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Years of Experience] is Not Visible or hidden at the moment
+2019-12-11 09:19:34:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Years of Experience] is Not Visible or hidden at the moment
 com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Years of Experience] is Not Visible or hidden at the moment
 	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
 	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
@@ -143,13 +143,13 @@ com.cognizant.cognizantits.engine.execution.exception.element.ElementException: 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-Step:8   | Object: datepicker | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:17:46.046
-Using @id [datepicker], Object 'datepicker' Found in 22 ms
+Step:8   | Object: datepicker | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:19:34.034
+Using @id [datepicker], Object 'datepicker' Found in 18 ms
 [FAIL]   | Seems Like the Element [datepicker] is Not Visible or hidden at the moment
 
 ===================================================================================================
 
-2019-12-11 09:17:53:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [datepicker] is Not Visible or hidden at the moment
+2019-12-11 09:19:41:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [datepicker] is Not Visible or hidden at the moment
 com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [datepicker] is Not Visible or hidden at the moment
 	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
 	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
@@ -166,13 +166,13 @@ com.cognizant.cognizantits.engine.execution.exception.element.ElementException: 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-Step:9   | Object: datepicker | Action: Set | Input: @01/01/2017 | Conditon:  | @11-Dec-2019 09:17:53.053
+Step:9   | Object: datepicker | Action: Set | Input: @01/01/2017 | Conditon:  | @11-Dec-2019 09:19:41.041
 Using @id [datepicker], Object 'datepicker' Found in 13 ms
 [FAIL]   | Seems Like the Element [datepicker] is Not Visible or hidden at the moment
 
 ===================================================================================================
 
-2019-12-11 09:18:00:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [datepicker] is Not Visible or hidden at the moment
+2019-12-11 09:19:48:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [datepicker] is Not Visible or hidden at the moment
 com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [datepicker] is Not Visible or hidden at the moment
 	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
 	at com.cognizant.cognizantits.engine.commands.Basic.Set(Basic.java:99)
@@ -189,13 +189,13 @@ com.cognizant.cognizantits.engine.execution.exception.element.ElementException: 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-Step:1   | Object: Profession | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:18:00.000
-Using @name [profession], Object 'Profession' Found in 18 ms
+Step:1   | Object: Profession | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:19:48.048
+Using @name [profession], Object 'Profession' Found in 16 ms
 [FAIL]   | Seems Like the Element [Profession] is Not Visible or hidden at the moment
 
 ===================================================================================================
 
-2019-12-11 09:18:07:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Profession] is Not Visible or hidden at the moment
+2019-12-11 09:19:55:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Profession] is Not Visible or hidden at the moment
 com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Profession] is Not Visible or hidden at the moment
 	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
 	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
@@ -218,13 +218,13 @@ com.cognizant.cognizantits.engine.execution.exception.element.ElementException: 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-Step:2   | Object: Automation Tool | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:18:07.007
-Using @name [tool], Object 'Automation Tool' Found in 24 ms
+Step:2   | Object: Automation Tool | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:19:55.055
+Using @name [tool], Object 'Automation Tool' Found in 16 ms
 [FAIL]   | Seems Like the Element [Automation Tool] is Not Visible or hidden at the moment
 
 ===================================================================================================
 
-2019-12-11 09:18:14:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Automation Tool] is Not Visible or hidden at the moment
+2019-12-11 09:20:02:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Automation Tool] is Not Visible or hidden at the moment
 com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Automation Tool] is Not Visible or hidden at the moment
 	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
 	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
@@ -247,25 +247,25 @@ com.cognizant.cognizantits.engine.execution.exception.element.ElementException: 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-Step:3   | Object: AsiaEuropeAfricaAustraliaSouth | Action: selectByVisibleText | Input: @Australia | Conditon:  | @11-Dec-2019 09:18:14.014
+Step:3   | Object: AsiaEuropeAfricaAustraliaSouth | Action: selectByVisibleText | Input: @Australia | Conditon:  | @11-Dec-2019 09:20:02.002
 Using @name [continents], Object 'AsiaEuropeAfricaAustraliaSouth' Found in 17 ms
 [DONE]   | Item/s 'Australia' is/are selected from list AsiaEuropeAfricaAustraliaSouth
 
 ===================================================================================================
 
-Step:4   | Object: Browser CommandsNavigation Com | Action: selectByVisibleText | Input: @Browser Commands | Conditon:  | @11-Dec-2019 09:18:14.014
-Using @name [selenium_commands], Object 'Browser CommandsNavigation Com' Found in 17 ms
+Step:4   | Object: Browser CommandsNavigation Com | Action: selectByVisibleText | Input: @Browser Commands | Conditon:  | @11-Dec-2019 09:20:02.002
+Using @name [selenium_commands], Object 'Browser CommandsNavigation Com' Found in 18 ms
 [DONE]   | Item/s 'Browser Commands' is/are selected from list Browser CommandsNavigation Com
 
 ===================================================================================================
 
-Step:11  | Object: Button | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:18:14.014
-Using @name [submit], Object 'Button' Found in 16 ms
+Step:11  | Object: Button | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:20:02.002
+Using @name [submit], Object 'Button' Found in 17 ms
 [FAIL]   | Seems Like the Element [Button] is Not Visible or hidden at the moment
 
 ===================================================================================================
 
-2019-12-11 09:18:21:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Button] is Not Visible or hidden at the moment
+2019-12-11 09:20:09:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Button] is Not Visible or hidden at the moment
 com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Button] is Not Visible or hidden at the moment
 	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
 	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
@@ -283,13 +283,13 @@ com.cognizant.cognizantits.engine.execution.exception.element.ElementException: 
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
 Step:12  | Object: Text1
- Text2 | Action: assertElementDisplayed | Input:  | Conditon:  | @11-Dec-2019 09:18:21.021
+ Text2 | Action: assertElementDisplayed | Input:  | Conditon:  | @11-Dec-2019 09:20:09.009
 [FAIL]   | Seems Like the Element [Text1
  Text2] is Not Present/Found in the page Try Adding wait or heal it
 
 ===================================================================================================
 
-2019-12-11 09:18:28:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Text1
+2019-12-11 09:20:16:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Text1
  Text2] is Not Present/Found in the page Try Adding wait or heal it
 com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Text1
  Text2] is Not Present/Found in the page Try Adding wait or heal it
@@ -317,12 +317,12 @@ Failed Steps         : 10
 Time Taken           : 00:01:12
 -----------------------------------------------------
 
-Run Finished on Wed Dec 11 09:18:28 UTC 2019
+Run Finished on Wed Dec 11 09:20:16 UTC 2019
 -----------------------------------------------------
-ExecutionDate        : 11-Dec-2019 09-17-16
+ExecutionDate        : 11-Dec-2019 09-19-04
 Executed TestCases   : 1
 Passed TestCases     : 0
 Failed TestCases     : 1
 Time Taken           : 00:01:12
-ReportPath           : file:///Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/11-Dec-2019 09-17-16/summary.html
+ReportPath           : file:///Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/11-Dec-2019 09-19-04/summary.html
 -----------------------------------------------------
