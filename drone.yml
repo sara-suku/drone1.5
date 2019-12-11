@@ -29,15 +29,12 @@ steps:
        - chmod 777 ./Run.command
        - ./Run.command -run -project_location "Projects/DemoProject" -release "cits" -testset "BasicWebFlow_Environment1" -standalone_report
        - mkdir -p Results
-       - git clone https://github.com/sara-suku/drone1.5.git
-       - rm -rf ./Results
        - cp -r ./Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/Latest/* Results
        - cd ./Results
        - git add *
        - git commit -m "Test Results"
        - git remote set-url --add origin https://github.com/sara-suku/drone1.5
        - git pull origin master
-       - rm -rf 
        - git push https://sara-suku:Jesus-853@github.com/sara-suku/drone1.5
        
        
