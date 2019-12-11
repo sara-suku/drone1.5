@@ -9,7 +9,7 @@ os.arch              : amd64
 os.version           : 4.15.0-20-generic
 file.encoding        : UTF-8
 ========================
-Run Started on Wed Dec 11 09:12:25 UTC 2019
+Run Started on Wed Dec 11 09:14:39 UTC 2019
 Loading Browser Profile
 SLF4J: Class path contains multiple SLF4J bindings.
 SLF4J: Found binding in [jar:file:/drone/src/lib/slf4j-simple-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
@@ -31,278 +31,95 @@ Inside Task Run
 Running Iteration 1
 Launching Chrome
 Launching Remote Driver
-2019-12-11 09:12:25:12S +0000 [INFO] org.openqa.selenium.remote.DesiredCapabilities chrome:Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-2019-12-11 09:12:26:12S +0000 [INFO] org.openqa.selenium.remote.ProtocolHandshake createSession:Detected dialect: W3C
-Chrome Launched
-Step:1   | Object: Browser | Action: Open | Input: URL_Global:URL | Conditon:  | @11-Dec-2019 09:12:26.026
-[DONE]   | Opened Url: http://toolsqa.com/automation-practice-form/
-
-===================================================================================================
-
-Step:2   | Object: firstname | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:12:28.028
-Using @name [firstname], Object 'firstname' Found in 33 ms
-[DONE]   | Clicking on firstname
-
-===================================================================================================
-
-Step:3   | Object: firstname | Action: Set | Input: @Cognizant | Conditon:  | @11-Dec-2019 09:12:29.029
-Using @name [firstname], Object 'firstname' Found in 20 ms
-[DONE]   | Entered Text 'Cognizant' on 'firstname'
-
-===================================================================================================
-
-Step:4   | Object: lastname | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:12:29.029
-Using @type [input], Object 'lastname' Found in 112 ms
-[FAIL]   | Seems Like the Element [lastname] is Not Visible or hidden at the moment
-
-===================================================================================================
-
-2019-12-11 09:12:35:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [lastname] is Not Visible or hidden at the moment
-com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [lastname] is Not Visible or hidden at the moment
-	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
-	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
-	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+2019-12-11 09:14:39:12S +0000 [INFO] org.openqa.selenium.remote.DesiredCapabilities chrome:Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+2019-12-11 09:14:40:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.core.Task onError:Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized], extensions: []}, version: }
+Command duration or timeout: 232 milliseconds
+org.openqa.selenium.WebDriverException: Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized], extensions: []}, version: }
+Command duration or timeout: 232 milliseconds
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$errorHandler$0(JsonWireProtocolResponse.java:54)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at com.cognizant.cognizantits.engine.drivers.WebDriverFactory.createRemoteDriver(WebDriverFactory.java:414)
+	at com.cognizant.cognizantits.engine.drivers.WebDriverFactory.create(WebDriverFactory.java:258)
+	at com.cognizant.cognizantits.engine.drivers.WebDriverFactory.create(WebDriverFactory.java:171)
+	at com.cognizant.cognizantits.engine.drivers.WebDriverFactory.createRemote(WebDriverFactory.java:157)
+	at com.cognizant.cognizantits.engine.drivers.SeleniumDriver.launchDriver(SeleniumDriver.java:63)
+	at com.cognizant.cognizantits.engine.core.Task.launchBrowser(Task.java:158)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:128)
 	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized], extensions: []}, version: }
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '7b369e87ffd6', ip: '192.168.160.3', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-20-generic', java.version: '11.0.2'
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:118)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:85)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:69)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.seleniumhq.jetty9.servlet.ServletHolder.handle(ServletHolder.java:865)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doHandle(ServletHandler.java:535)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.seleniumhq.jetty9.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doHandle(ContextHandler.java:1340)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.seleniumhq.jetty9.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.seleniumhq.jetty9.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.seleniumhq.jetty9.server.handler.ContextHandler.doScope(ContextHandler.java:1242)
+	at org.seleniumhq.jetty9.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.seleniumhq.jetty9.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.seleniumhq.jetty9.server.Server.handle(Server.java:503)
+	at org.seleniumhq.jetty9.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.seleniumhq.jetty9.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.seleniumhq.jetty9.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.seleniumhq.jetty9.io.FillInterest.fillable(FillInterest.java:103)
+	at org.seleniumhq.jetty9.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.seleniumhq.jetty9.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
 
-Step:5   | Object: lastname | Action: Set | Input: @Intelligent Test Scripter | Conditon:  | @11-Dec-2019 09:12:35.035
-Using @type [input], Object 'lastname' Found in 87 ms
-[FAIL]   | Seems Like the Element [lastname] is Not Visible or hidden at the moment
-
-===================================================================================================
-
-2019-12-11 09:12:41:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [lastname] is Not Visible or hidden at the moment
-com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [lastname] is Not Visible or hidden at the moment
-	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
-	at com.cognizant.cognizantits.engine.commands.Basic.Set(Basic.java:99)
-	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
-	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-Step:6   | Object: Sex | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:12:41.041
-Using @name [sex], Object 'Sex' Found in 18 ms
-[FAIL]   | Seems Like the Element [Sex] is Not Visible or hidden at the moment
-
-===================================================================================================
-
-2019-12-11 09:12:48:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Sex] is Not Visible or hidden at the moment
-com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Sex] is Not Visible or hidden at the moment
-	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
-	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
-	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
-	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-Step:7   | Object: Years of Experience | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:12:48.048
-Using @name [exp], Object 'Years of Experience' Found in 18 ms
-[FAIL]   | Seems Like the Element [Years of Experience] is Not Visible or hidden at the moment
+[DEBUG]   | Error forwarding the new session Empty pool of VM for setup Capabilities {browserName: chrome, goog:chromeOptions: {args: [--disable-notifications, --start-maximized], extensions: []}, version: }
+Command duration or timeout: 232 milliseconds
 
 ===================================================================================================
 
-2019-12-11 09:12:55:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Years of Experience] is Not Visible or hidden at the moment
-com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Years of Experience] is Not Visible or hidden at the moment
-	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
-	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
-	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
-	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-Step:8   | Object: datepicker | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:12:55.055
-Using @id [datepicker], Object 'datepicker' Found in 18 ms
-[FAIL]   | Seems Like the Element [datepicker] is Not Visible or hidden at the moment
-
-===================================================================================================
-
-2019-12-11 09:13:02:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [datepicker] is Not Visible or hidden at the moment
-com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [datepicker] is Not Visible or hidden at the moment
-	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
-	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
-	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
-	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-Step:9   | Object: datepicker | Action: Set | Input: @01/01/2017 | Conditon:  | @11-Dec-2019 09:13:02.002
-Using @id [datepicker], Object 'datepicker' Found in 16 ms
-[FAIL]   | Seems Like the Element [datepicker] is Not Visible or hidden at the moment
-
-===================================================================================================
-
-2019-12-11 09:13:09:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [datepicker] is Not Visible or hidden at the moment
-com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [datepicker] is Not Visible or hidden at the moment
-	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
-	at com.cognizant.cognizantits.engine.commands.Basic.Set(Basic.java:99)
-	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
-	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-Step:1   | Object: Profession | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:13:09.009
-Using @name [profession], Object 'Profession' Found in 17 ms
-[FAIL]   | Seems Like the Element [Profession] is Not Visible or hidden at the moment
-
-===================================================================================================
-
-2019-12-11 09:13:16:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Profession] is Not Visible or hidden at the moment
-com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Profession] is Not Visible or hidden at the moment
-	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
-	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
-	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
-	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-Step:2   | Object: Automation Tool | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:13:16.016
-Using @name [tool], Object 'Automation Tool' Found in 16 ms
-[FAIL]   | Seems Like the Element [Automation Tool] is Not Visible or hidden at the moment
-
-===================================================================================================
-
-2019-12-11 09:13:23:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Automation Tool] is Not Visible or hidden at the moment
-com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Automation Tool] is Not Visible or hidden at the moment
-	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
-	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
-	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:387)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeTestCase(TestStepRunner.java:137)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.execute(TestStepRunner.java:118)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:63)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
-	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-Step:3   | Object: AsiaEuropeAfricaAustraliaSouth | Action: selectByVisibleText | Input: @Australia | Conditon:  | @11-Dec-2019 09:13:23.023
-Using @name [continents], Object 'AsiaEuropeAfricaAustraliaSouth' Found in 17 ms
-[DONE]   | Item/s 'Australia' is/are selected from list AsiaEuropeAfricaAustraliaSouth
-
-===================================================================================================
-
-Step:4   | Object: Browser CommandsNavigation Com | Action: selectByVisibleText | Input: @Browser Commands | Conditon:  | @11-Dec-2019 09:13:23.023
-Using @name [selenium_commands], Object 'Browser CommandsNavigation Com' Found in 16 ms
-[DONE]   | Item/s 'Browser Commands' is/are selected from list Browser CommandsNavigation Com
-
-===================================================================================================
-
-Step:11  | Object: Button | Action: Click | Input:  | Conditon:  | @11-Dec-2019 09:13:23.023
-Using @name [submit], Object 'Button' Found in 17 ms
-[FAIL]   | Seems Like the Element [Button] is Not Visible or hidden at the moment
-
-===================================================================================================
-
-2019-12-11 09:13:30:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Button] is Not Visible or hidden at the moment
-com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Button] is Not Visible or hidden at the moment
-	at com.cognizant.cognizantits.engine.commands.General.elementEnabled(General.java:64)
-	at com.cognizant.cognizantits.engine.commands.Basic.Click(Basic.java:47)
-	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
-	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-
-Step:12  | Object: Text1
- Text2 | Action: assertElementDisplayed | Input:  | Conditon:  | @11-Dec-2019 09:13:30.030
-[FAIL]   | Seems Like the Element [Text1
- Text2] is Not Present/Found in the page Try Adding wait or heal it
-
-===================================================================================================
-
-2019-12-11 09:13:37:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.execution.run.TestCaseRunner onRuntimeException:Seems Like the Element [Text1
- Text2] is Not Present/Found in the page Try Adding wait or heal it
-com.cognizant.cognizantits.engine.execution.exception.element.ElementException: Seems Like the Element [Text1
- Text2] is Not Present/Found in the page Try Adding wait or heal it
-	at com.cognizant.cognizantits.engine.commands.General.elementDisplayed(General.java:57)
-	at com.cognizant.cognizantits.engine.commands.AssertElement.assertElementDisplayed(AssertElement.java:67)
-	at com.cognizant.cognizantits.engine.support.reflect.MethodExecutor.executeMethod(MethodExecutor.java:39)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeAction(TestStepRunner.java:165)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:161)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.executeStep(TestStepRunner.java:147)
-	at com.cognizant.cognizantits.engine.execution.run.TestStepRunner.run(TestStepRunner.java:66)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.runStep(TestCaseRunner.java:395)
-	at com.cognizant.cognizantits.engine.execution.run.TestCaseRunner.run(TestCaseRunner.java:346)
-	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:130)
+2019-12-11 09:14:40:12S +0000 [SEVERE] com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler updateTestLog:null
+java.lang.NullPointerException
+	at com.cognizant.cognizantits.engine.reporting.impl.html.HtmlTestCaseHandler.updateTestLog(HtmlTestCaseHandler.java:103)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:134)
+	at com.cognizant.cognizantits.engine.reporting.TestCaseReport.updateTestLog(TestCaseReport.java:105)
+	at com.cognizant.cognizantits.engine.core.Task.onError(Task.java:195)
+	at com.cognizant.cognizantits.engine.core.Task.onError(Task.java:183)
+	at com.cognizant.cognizantits.engine.core.Task.runIteration(Task.java:140)
 	at com.cognizant.cognizantits.engine.core.Task.run(Task.java:85)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
@@ -311,18 +128,18 @@ com.cognizant.cognizantits.engine.execution.exception.element.ElementException: 
 
 ---------------------------------------------------
 Testcase Name        : BasicFeatures:DemoTestCase
-Executed Steps       : 15
-Passed Steps         : 5
-Failed Steps         : 10
-Time Taken           : 00:01:11
+Executed Steps       : 1
+Passed Steps         : 0
+Failed Steps         : 0
+Time Taken           : 00:00:00
 -----------------------------------------------------
 
-Run Finished on Wed Dec 11 09:13:37 UTC 2019
+Run Finished on Wed Dec 11 09:14:40 UTC 2019
 -----------------------------------------------------
-ExecutionDate        : 11-Dec-2019 09-12-25
+ExecutionDate        : 11-Dec-2019 09-14-39
 Executed TestCases   : 1
 Passed TestCases     : 0
 Failed TestCases     : 1
-Time Taken           : 00:01:11
-ReportPath           : file:///Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/11-Dec-2019 09-12-25/summary.html
+Time Taken           : 00:00:00
+ReportPath           : file:///Projects/DemoProject/Results/TestExecution/cits/BasicWebFlow_Environment1/11-Dec-2019 09-14-39/summary.html
 -----------------------------------------------------
