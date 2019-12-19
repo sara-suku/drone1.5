@@ -2,7 +2,6 @@ kind: pipeline
 type: docker
 name: linux-amd64
 
-
 services:
    -  name: hub
       image: selenium/hub:3.141.59-xenon
@@ -40,5 +39,4 @@ steps:
        
 when:
     event:
-      - push
-      - tag
+       - tag
